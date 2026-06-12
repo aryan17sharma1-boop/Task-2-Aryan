@@ -1,0 +1,258 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f5f7fa;
+color:#111;
+}
+
+/* Navbar */
+
+header{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+background:white;
+padding:20px 80px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#2563eb;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#111;
+font-weight:500;
+}
+nav ul li a:hover{
+    color:#2563eb;
+}
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    padding:140px 80px 80px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h2{
+    font-size:60px;
+    line-height:1.1;
+    font-weight:700;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+margin-bottom:30px;
+}
+
+.hero-text button{
+padding:15px 35px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+.hero-text button:hover,
+.contact button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    transition:0.3s;
+}
+
+.hero-image{
+flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:650px;
+    border-radius:20px;
+}
+
+/* Sections */
+
+.destinations,
+.services,
+.packages{
+padding:100px 80px;
+text-align:center;
+}
+
+.destinations h2,
+.services h2,
+.packages h2{
+font-size:45px;
+margin-bottom:50px;
+}
+
+/* Cards */
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:320px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+margin-top:20px;
+margin-bottom:10px;
+}
+
+.card p{
+padding-bottom:20px;
+color:#555;
+}
+
+/* Contact */
+
+.contact{
+padding:100px 20px;
+text-align:center;
+background:#2563eb;
+color:white;
+}
+
+.contact h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+.contact button{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+background:white;
+color:#2563eb;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    padding:20px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:150px 25px 80px;
+}
+
+.hero-text h2{
+    font-size:45px;
+}
+
+.destinations,
+.services,
+.packages{
+    padding:80px 25px;
+}
+
+.card{
+    width:100%;
+}
+}
+#selected-package{
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    color:#2563eb;
+    margin-top:30px;
+}
+#popup{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#111;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    opacity:0;
+    transition:0.3s;
+}

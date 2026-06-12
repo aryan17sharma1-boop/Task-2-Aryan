@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrek</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<div id="popup"></div>
+<script src="script.js"></script>
+<body>
+
+<!-- Navbar -->
+
+<header>
+    <nav>
+        <h1 class="logo">GlobeTrek</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h2>Explore The World</h2>
+        <p>
+            Discover amazing destinations, unforgettable adventures,
+            and travel experiences you'll cherish forever.
+        </p>
+
+        <a href="#packages">
+    <button>Book Your Trip</button>
+</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/travel.jpg" alt="Travel">
+    </div>
+
+</section>
+
+<!-- Destinations -->
+
+<section class="destinations" id="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="images/bali.jpg" alt="Bali">
+            <h3>Bali</h3>
+            <p>Beautiful beaches and tropical vibes.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>The city of love and iconic landmarks.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/dubai.jpg" alt="Dubai">
+            <h3>Dubai</h3>
+            <p>Luxury lifestyle and stunning architecture.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Why Choose Us -->
+
+<section class="services">
+
+    <h2>Why Choose Us</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Best Prices</h3>
+            <p>Affordable travel packages for everyone.</p>
+        </div>
+
+        <div class="card">
+            <h3>Safe Travel</h3>
+            <p>Your comfort and safety are our priority.</p>
+        </div>
+
+        <div class="card">
+            <h3>24/7 Support</h3>
+            <p>Dedicated support whenever you need help.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Packages -->
+<section class="packages" id="packages">
+
+    <h2>Tour Packages</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="selectPackage('Basic')">
+            <h3>Basic</h3>
+            <p>₹19,999</p>
+        </div>
+
+        <div class="card" onclick="selectPackage('Premium')">
+            <h3>Premium</h3>
+            <p>₹49,999</p>
+        </div>
+
+        <div class="card" onclick="selectPackage('Luxury')">
+            <h3>Luxury</h3>
+            <p>₹99,999</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+    <p>Email: contact@globetrek.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+    <button>Contact Now</button>
+
+</section>
+<p id="selected-package"></p>
+
+<script src="script.js"></script>
+
+<!-- Footer -->
+
+<footer>
+    <p>© 2026 GlobeTrek | Designed by Aryan Sharma</p>
+</footer>
+
+</body>
+</html>
